@@ -10,7 +10,7 @@ html, body, h1
 	left: 0px;
 	height: 40px;
 	width: 100%;
-	padding: 2px;
+	padding: 3px;
 	background-color: gray;
 }
 
@@ -46,3 +46,4 @@ html, body, h1
 }
 
 .italic { font-style: italic; }
+.bold { font-weight: bold; }
