@@ -1,0 +1,48 @@
+html, body, h1
+{
+	font-family: "Comic Sans MS"; /* That's Right */
+}
+
+#menu-bar
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 40px;
+	width: 100%;
+	padding: 2px;
+	background-color: gray;
+}
+
+#container
+{
+	margin-top: 40px;
+	width: 100%;
+}
+
+#content1
+{
+	width: 1024px;
+	margin: auto;
+}
+
+#title
+{
+	text-align: center;
+}
+
+#create-button
+{
+	display: block;
+	height: 70px;
+	width: 170px;
+	margin: auto;
+}
+
+.center
+{
+	text-align: center;
+	margin: auto;
+}
+
+.italic { font-style: italic; }
