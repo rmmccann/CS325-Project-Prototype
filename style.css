@@ -29,15 +29,20 @@ html, body, h1, h2, h3, h4, h5
 #leftdiv, #rightdiv
 {
 	width: 50%;
+	padding: 8px;
 }
 
 #leftdiv
 {
 	float: left;
 
+	border-width: 0px;
 	border-style: solid;
 	border-right: 1px solid black;
-	border: 1px;
+	/*border: 1px;*/
+	border-right-width: 1px;
+
+	min-height: 500px;
 }
 #rightdiv
 {
@@ -81,6 +86,11 @@ input[type=text]
 {
 	text-align: center;
 	margin: auto;
+}
+
+.indent
+{
+	margin-left: 30px;
 }
 
 .italic { font-style: italic; }
