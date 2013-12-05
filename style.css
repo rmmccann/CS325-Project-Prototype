@@ -1,4 +1,4 @@
-html, body, h1
+html, body, h1, h2, h3, h4, h5
 {
 	font-family: "Comic Sans MS"; /* That's Right */
 }
@@ -10,7 +10,7 @@ html, body, h1
 	left: 0px;
 	height: 40px;
 	width: 100%;
-	padding: 2px;
+	padding: 3px;
 	background-color: gray;
 }
 
@@ -20,11 +20,30 @@ html, body, h1
 	width: 100%;
 }
 
-#content1
+#content1, #content2
 {
 	width: 1024px;
 	margin: auto;
 }
+
+#leftdiv, #rightdiv
+{
+	width: 50%;
+}
+
+#leftdiv
+{
+	float: left;
+
+	border-style: solid;
+	border-right: 1px solid black;
+	border: 1px;
+}
+#rightdiv
+{
+	float: right;
+}
+
 
 #title
 {
@@ -39,6 +58,25 @@ html, body, h1
 	margin: auto;
 }
 
+#group-desc
+{
+	height: 60px;
+	/*line-height: 4em;*/
+}
+
+input[type=text]
+{
+	margin: 2px;
+	width: 300px;
+}
+
+.input_test
+{
+	/*float: right;*/
+	position: absolute;
+	left: 200px;
+}
+
 .center
 {
 	text-align: center;
@@ -46,3 +84,5 @@ html, body, h1
 }
 
 .italic { font-style: italic; }
+.bold { font-weight: bold; }
+.comicsans { font-family: "Comic Sans MS"; }

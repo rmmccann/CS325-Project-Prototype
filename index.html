@@ -14,19 +14,90 @@
 	<div id="menu-bar">
 		DELEGATOR
 		<div class="btn-group">
-			<button type="button" class="btn btn-default">Home</button>
+			<button type="button" class="btn btn-default active">Home</button>
 			<button type="button" class="btn btn-default">Work</button>
-			<button type="button" class="btn btn-default">Group</button>
+			<button type="button" class="btn btn-default" id="group-btn">Group</button>
 		</div>
 	</div>
 	<div id="container">
 		<div id="content1">
 			<br>
+			<br><br><br><br><br><br>
 			<h1 id="title">Welcome to DELEGATOR</h1>
 			<p class="center italic">The collaborative online task delegation cloud solution for education.</p>
 			<br><br>
 			<button id="create-button" type="button" class="btn btn-primary center">Create a Group Project</button>
 		</div>
+
+		<div id="content2" style="display: none;">
+			<br>
+			<h1 class="pull-left" >Project Title</h1>
+			<p style="float:right;">September 20 &mdash; October 4</p>
+			<br style="clear:both;">
+			<hr>
+
+			<div id="leftdiv">
+				<h3>Upcoming</h3>
+			</div>
+			<div id="rightdiv">
+				<h3>Overview</h3>
+			</div>
+
+		</div>
+
+
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<div id="modal-part-1">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
+							<h4 class="modal-title comicsans">Create New Group</h4>
+						</div>
+						<div class="modal-body">
+							Group Name:
+							<input type="text" style="top: 15px;" /><br>
+							Description:
+							<input type="text" style="top: 45px;" id="group-desc"/><br>
+							Your Name:
+							<input type="text" style="top: 110px;" /><br>
+							Email:
+							<input type="text" style="top: 140px;" /><br>
+						</div>
+						<div class="modal-footer">
+							<!--
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes <i class="glyphicon glyphicon-chevron-right"></i></button>
+							-->
+							<button type="button" class="btn btn-default" id="modal-next-btn">NEXT <i class="glyphicon glyphicon-chevron-right"></i></button>
+						</div>
+					</div>
+
+					<div id="modal-part-2" style="display: none;">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
+							<h4 class="modal-title comicsans">Create New Group</h4>
+						</div>
+						<div class="modal-body">
+							Invite Collaborators:
+								<textarea style="width: 300px;"></textarea><br>
+							Unique URL:
+								<input type="text" disabled="disabled" value="http://www.example.com/sa90j3eoirwjslkd9"/><br>
+						</div>
+						<div class="modal-footer">
+							<!--
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes <i class="glyphicon glyphicon-chevron-right"></i></button>
+							-->
+							<button type="button" class="btn btn-primary" id="create-btn">CREATE</button>
+						</div>
+					</div>
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 	</div>
 </body>
 </html>
