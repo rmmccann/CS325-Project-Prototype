@@ -14,8 +14,8 @@
 	<div id="menu-bar">
 		<span class="bold" style="color:white; padding: 4px;">DELEGATOR</span>
 		<div class="btn-group">
-			<button type="button" class="btn btn-default active">Home</button>
-			<button type="button" class="btn btn-default">Work</button>
+			<button type="button" class="btn btn-default active" id="home-btn">Home</button>
+			<button type="button" class="btn btn-default" id="work-btn">Work</button>
 			<button type="button" class="btn btn-default" id="group-btn">Group</button>
 		</div>
 	</div>
@@ -34,8 +34,8 @@
 		<!-- main content -->
 		<div id="content2" style="display: none;">
 			<br>
-			<h1 class="pull-left" >Project Title</h1>
-			<p style="float:right;">September 20 &mdash; October 4</p>
+			<h1 id="project-title" class="pull-left">Project Title</h1>
+			<p style="float:right;">September 20 &mdash; October 11</p>
 			<br style="clear:both;">
 			<hr>
 
@@ -99,85 +99,85 @@
 
 			</div>
 			<div id="rightdiv">
-				<h3>Overview (4 sections)</h3>
-				<hr>
+				<div id="overview">
+					<h3>Overview (<span id="num-sections">4</span> sections)</h3>
+					<hr>
 
-				<div class="collapsible">
-					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-down"></i>Section 1</P>
-					<div class="list-content">
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 1</span>
-							<span class="pull-right">Ryan, Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 2</span>
-							<span class="pull-right">Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 3</span>
-							<span class="pull-right">Kyle, Nick</span>
+					<div class="collapsible">
+						<p class="list-title closed"><i class="glyphicon glyphicon-chevron-down"></i>Section 1<span class="pull-right due-date">September 20</span></P>
+						<div class="list-content">
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 1</span>
+								<span class="pull-right">Ryan, Jon</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 2</span>
+								<span class="pull-right">Jon</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 3</span>
+								<span class="pull-right">Kyle, Nick</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="collapsible">
-					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 2</P>
-					<div class="list-content" style="display:none;">
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 4</span>
-							<span class="pull-right">Ryan, Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 5</span>
-							<span class="pull-right">Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 6</span>
-							<span class="pull-right">Kyle, Nick</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 7</span>
-							<span class="pull-right">Kyle, Nick</span>
+					<div class="collapsible">
+						<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 2<span class="pull-right due-date">September 27</span></P>
+						<div class="list-content" style="display:none;">
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 4</span>
+								<span class="pull-right">Ryan</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 5</span>
+								<span class="pull-right">Jon</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 6</span>
+								<span class="pull-right">Kyle</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 7</span>
+								<span class="pull-right">Nick</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="collapsible">
-					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 3</P>
-					<div class="list-content" style="display:none;">
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 4</span>
-							<span class="pull-right">Ryan, Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 5</span>
-							<span class="pull-right">Jon</span>
+					<div class="collapsible">
+						<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 3<span class="pull-right due-date">October 4</span></P>
+						<div class="list-content" style="display:none;">
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 4</span>
+								<span class="pull-right">Ryan, Nick</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 5</span>
+								<span class="pull-right">Kyle, Jon</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="collapsible">
-					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 4</P>
-					<div class="list-content" style="display:none;">
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 4</span>
-							<span class="pull-right">Ryan, Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 5</span>
-							<span class="pull-right">Jon</span>
-						</div>
-						<div class="indent checkbox zebra-stripe">
-							<span class="pull-left">task 6</span>
-							<span class="pull-right">Kyle, Nick</span>
+					<div class="collapsible">
+						<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 4<span class="pull-right due-date">October 11</span></P>
+						<div class="list-content" style="display:none;">
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 4</span>
+								<span class="pull-right">Ryan, Kyle</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 5</span>
+								<span class="pull-right">Nick, Jon</span>
+							</div>
+							<div class="indent checkbox zebra-stripe">
+								<span class="pull-left">task 6</span>
+								<span class="pull-right">Ryan, Jon, Kyle, Nick</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
+				</div><!-- /overview -->
 				<button type="button" class="btn" id="add-section-btn">Add Section</button>
-
-			</div>
-
+			</div><!-- /rightdiv -->
 		</div>
 
 
@@ -192,14 +192,14 @@
 							<h4 class="modal-title comicsans">Create New Group</h4>
 						</div>
 						<div class="modal-body">
-							Group Name:
-							<input type="text" style="top: 15px;" /><br>
+							Project Name:
+							<input type="text" style="top: 15px;" id="project-name" class="pull-right" /><br style="clear: both;">
 							Description:
-							<input type="text" style="top: 45px;" id="group-desc"/><br>
+							<input type="text" style="top: 45px;" id="group-desc" class="pull-right" /><br style="clear: both;">
 							Your Name:
-							<input type="text" style="top: 110px;" /><br>
+							<input type="text" style="top: 110px;" id="your-name" class="pull-right" /><br style="clear: both;">
 							Email:
-							<input type="text" style="top: 140px;" /><br>
+							<input type="text" style="top: 140px;" id="your-email" class="pull-right" /><br style="clear: both;">
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" id="modal-next-btn">NEXT <i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -213,9 +213,9 @@
 						</div>
 						<div class="modal-body">
 							Invite Collaborators:
-								<textarea style="width: 300px;"></textarea><br>
+								<textarea style="width: 300px;" id="collaborators" class="pull-right"></textarea><br style="clear: both;">
 							Unique URL:
-								<input type="text" disabled="disabled" value="http://www.example.com/sa90j3eoirwjslkd9"/><br>
+								<input type="text" disabled="disabled" value="www.example.com/?group=sa90j3eoirwjslkd9" class="pull-right"/><br style="clear: both;">
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-primary" id="create-btn">CREATE</button>
@@ -237,20 +237,43 @@
 					</div>
 					<div class="modal-body">
 						Title:
-						<input type="text" style="top: 15px;" /><br>
+						<input type="text" style="top: 15px; margin-right: 150px;" class="pull-right" id="section-title" /><br>
 						Due:
-						<input type="text" style="top: 45px;" /><br>
+						<input type="text" style="top: 45px; margin-right: 150px;" class="pull-right" id="section-due" /><br>
+						<br style="clear: both;">
 						<hr>
 						Tasks
-						<ol>
+						<ol id="new-tasks">
 							<li>
-								<input type="text" />
+								<input type="text" class="task" />
+								assigned to
+								<input type="text" class="assignee" />
 							</li>
 						</ol>
-						<button type="button" class="btn btn-xs"><i class="glyphicon glyphicon-plus"></i> add task</button>
+						<button type="button" class="btn btn-xs" id="add-task-btn"><i class="glyphicon glyphicon-plus"></i> add task</button>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" id="modal-next-btn"> Add</button>
+						<button type="button" class="btn btn-default" id="add-section-modal-btn"> Add</button>
+					</div>
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<!-- Group modal -->
+		<div id="group-modal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
+						<h4 class="modal-title comicsans">Group Members</h4>
+					</div>
+					<div class="modal-body">
+						<div id="group-members"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 
 				</div><!-- /.modal-content -->
