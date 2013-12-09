@@ -50,6 +50,14 @@ $(document).ready(function(){
 	}
 	addFoldingListener();
 
+    //
+    // Task Completion
+    //
+    $("#this-week input").click(function() {
+        var labelObj = $(this).parent();    // Because I like verbose JS ohkay?!
+        labelObj.toggleClass("strikethrough");
+    });
+
 	//Add Section Button
 	$("#add-section-btn").click(function(){
 		$("#add-section-modal").modal({show: true});
@@ -117,5 +125,5 @@ $(document).ready(function(){
 	$("#group-btn").click(function(){
 		$("#group-modal").modal("show");
 	});
-	
+
 });

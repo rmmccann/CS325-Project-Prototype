@@ -121,3 +121,11 @@ input.task, input.assignee
 {
 	background: lightgray;
 }
+
+/*
+    Globals
+*/
+
+.strikethrough {
+    text-decoration: line-through;
+}
