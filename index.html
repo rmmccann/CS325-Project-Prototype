@@ -20,6 +20,8 @@
 		</div>
 	</div>
 	<div id="container">
+
+		<!-- Home page -->
 		<div id="content1">
 			<br>
 			<br><br><br><br><br><br>
@@ -29,6 +31,7 @@
 			<button id="create-button" type="button" class="btn btn-primary center">Create a Group Project</button>
 		</div>
 
+		<!-- main content -->
 		<div id="content2" style="display: none;">
 			<br>
 			<h1 class="pull-left" >Project Title</h1>
@@ -39,62 +42,151 @@
 			<div id="leftdiv">
 				<h3>Upcoming</h3>
 				<hr>
-				<p><i class="glyphicon glyphicon-chevron-down"></i>This week</P>
-					<div class="indent checkbox">
-						<label>
-							<input type="checkbox" value="task 1" />
-							task 1
-						</label>
+
+				<div id="this-week" class="collapsible">
+					<p class="list-title opened"><i class="glyphicon glyphicon-chevron-down"></i>This week</P>
+					<div class="list-content">
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 1
+							</label>
+						</div>
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 2
+							</label>
+						</div>
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 3
+							</label>
+						</div>
 					</div>
-					<div class="indent checkbox">
-						<label>
-							<input type="checkbox" value="task 1" />
-							task 2
-						</label>
+				</div>
+
+				<div id="next-week" class="collapsible">
+					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Next week</P>
+					<div class="list-content" style="display: none;">
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 4
+							</label>
+						</div>
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 5
+							</label>
+						</div>
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 6
+							</label>
+						</div>
+						<div class="indent checkbox">
+							<label>
+								<input type="checkbox" />
+								task 7
+							</label>
+						</div>
 					</div>
-					<div class="indent checkbox">
-						<label>
-							<input type="checkbox" value="task 1" />
-							task 3
-						</label>
-					</div>
-				<p><i class="glyphicon glyphicon-chevron-right"></i>Next week</P>
+				</div>
+
 			</div>
 			<div id="rightdiv">
 				<h3>Overview (4 sections)</h3>
 				<hr>
-				<p><i class="glyphicon glyphicon-chevron-down"></i>Section 1</P>
-					<div class="indent checkbox">
-						<label>
-							
-							task 1 ......................................................................................................... Ryan, Jon
-						</label>
+
+				<div class="collapsible">
+					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-down"></i>Section 1</P>
+					<div class="list-content">
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 1</span>
+							<span class="pull-right">Ryan, Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 2</span>
+							<span class="pull-right">Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 3</span>
+							<span class="pull-right">Kyle, Nick</span>
+						</div>
 					</div>
-					<div class="indent checkbox">
-						<label>
-							
-							task 2  ..................................................................................................................... Jon
-						</label>
+				</div>
+
+				<div class="collapsible">
+					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 2</P>
+					<div class="list-content" style="display:none;">
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 4</span>
+							<span class="pull-right">Ryan, Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 5</span>
+							<span class="pull-right">Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 6</span>
+							<span class="pull-right">Kyle, Nick</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 7</span>
+							<span class="pull-right">Kyle, Nick</span>
+						</div>
 					</div>
-					<div class="indent checkbox">
-						<label>
-							
-							task 3  ....................................................................................................... Kyle, Nick
-						</label>
+				</div>
+
+				<div class="collapsible">
+					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 3</P>
+					<div class="list-content" style="display:none;">
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 4</span>
+							<span class="pull-right">Ryan, Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 5</span>
+							<span class="pull-right">Jon</span>
+						</div>
 					</div>
-				<p><i class="glyphicon glyphicon-chevron-right"></i>Section 2</P>
-				<p><i class="glyphicon glyphicon-chevron-right"></i>Section 3</P>
-				<p><i class="glyphicon glyphicon-chevron-right"></i>Section 4</P>
+				</div>
+
+				<div class="collapsible">
+					<p class="list-title closed"><i class="glyphicon glyphicon-chevron-right"></i>Section 4</P>
+					<div class="list-content" style="display:none;">
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 4</span>
+							<span class="pull-right">Ryan, Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 5</span>
+							<span class="pull-right">Jon</span>
+						</div>
+						<div class="indent checkbox zebra-stripe">
+							<span class="pull-left">task 6</span>
+							<span class="pull-right">Kyle, Nick</span>
+						</div>
+					</div>
+				</div>
+
+				<button type="button" class="btn" id="add-section-btn">Add Section</button>
+
 			</div>
 
 		</div>
 
 
+		<!-- Group Createion modal -->
 		<div id="myModal" class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					
-					<div id="modal-part-1">
+
+					<div id="modal-part-1"><!-- Part 1 -->
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
 							<h4 class="modal-title comicsans">Create New Group</h4>
@@ -110,15 +202,11 @@
 							<input type="text" style="top: 140px;" /><br>
 						</div>
 						<div class="modal-footer">
-							<!--
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes <i class="glyphicon glyphicon-chevron-right"></i></button>
-							-->
 							<button type="button" class="btn btn-default" id="modal-next-btn">NEXT <i class="glyphicon glyphicon-chevron-right"></i></button>
 						</div>
-					</div>
+					</div><!-- /Part 1 -->
 
-					<div id="modal-part-2" style="display: none;">
+					<div id="modal-part-2" style="display: none;"><!-- Part 2 -->
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
 							<h4 class="modal-title comicsans">Create New Group</h4>
@@ -130,12 +218,39 @@
 								<input type="text" disabled="disabled" value="http://www.example.com/sa90j3eoirwjslkd9"/><br>
 						</div>
 						<div class="modal-footer">
-							<!--
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes <i class="glyphicon glyphicon-chevron-right"></i></button>
-							-->
 							<button type="button" class="btn btn-primary" id="create-btn">CREATE</button>
 						</div>
+					</div><!-- /Part 2 -->
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<!-- Add Section modal -->
+		<div id="add-section-modal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="glyphicon glyphicon-remove-circle"></i></button>
+						<h4 class="modal-title comicsans">Add New Section</h4>
+					</div>
+					<div class="modal-body">
+						Title:
+						<input type="text" style="top: 15px;" /><br>
+						Due:
+						<input type="text" style="top: 45px;" /><br>
+						<hr>
+						Tasks
+						<ol>
+							<li>
+								<input type="text" />
+							</li>
+						</ol>
+						<button type="button" class="btn btn-xs"><i class="glyphicon glyphicon-plus"></i> add task</button>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" id="modal-next-btn"> Add</button>
 					</div>
 
 				</div><!-- /.modal-content -->

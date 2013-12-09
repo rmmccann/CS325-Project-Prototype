@@ -97,3 +97,9 @@ input[type=text]
 .bold { font-weight: bold; }
 
 .comicsans { font-family: "Comic Sans MS"; }
+
+/* Apply zebra stripes to list of tasks */
+.zebra-stripe:nth-child(odd)
+{
+	background: lightgray;
+}
